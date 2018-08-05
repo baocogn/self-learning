@@ -1,7 +1,5 @@
 weight = 55
-height = 164
+height = 1.64
 
 if 18.5 <= weight / height ** 2 < 25:
-    print("Your BMI is considered normal.")
-elif weight / height ** 2 >= 25:
-    print("Your BMI is unnormal.")
+    print("BMI is considered normal.")
