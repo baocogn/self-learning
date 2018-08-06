@@ -1,3 +1,6 @@
-a = 70
-print(a % 10)
-print(a // 10)
+def func(a):
+    a[0] = 100
+    return a
+
+a = [1, 2, 3]
+print(func(a))
