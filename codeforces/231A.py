@@ -1,7 +1,6 @@
 n = int(input())
 
-for k in range(n):
-    s = list(map(int, input().split))
+
 
 def process(n):
     count = 0   
@@ -13,7 +12,7 @@ def process(n):
                 count += 0
     return count
 
-print(process(n))
+print(process(n)
 
     
 
