@@ -18,3 +18,4 @@ for char in a:
             resLen += 1
         
 print(res)        
+
