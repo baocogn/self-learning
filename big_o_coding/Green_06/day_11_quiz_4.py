@@ -22,26 +22,15 @@ class Student:
             return False
 
 
-def merge(Left, Right):
-    l, r = 0, 0
-    results = []
-    while l < len(Left) and r < len(Right):
-        if Left[l] > Right[r]:
-            results.append(Left[l])
-            l += 1
-        elif Left[l] <= Right[r]:
-            results.append(Right[r])
-            r += 1
-    results.extend(Right[r:]) if r < len(Right) else results.extend(Left[l:])
-    return results
-
-def merge_sort(A):
-    if len(A) <= 1:
-        return A
-
-    mid = len(A) // 2
-    return merge(merge_sort(A[:mid]), merge_sort(A[mid:]))
-
+def insertion_sort(n):
+    for i in range(1, len(n)):
+        x = n[i]
+        j = i
+        while (j > 0) and (n[j-1] > x):
+            n[j] = n[j-1]
+            j -= 1
+        n[j] = x
+    return n
 
 n = int(input())
 

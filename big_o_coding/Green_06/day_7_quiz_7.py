@@ -10,4 +10,4 @@ for char in a:
         res += " "
     elif char != ".":
         
-        
+    
