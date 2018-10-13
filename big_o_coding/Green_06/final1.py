@@ -1,3 +1,4 @@
+n, index = map(int, input().split())
 class Node:
     def __init__(self, data=None):
         self.data = data
@@ -16,13 +17,13 @@ class LinkedList:
             self.tail.next = p
             self.tail = p
     
-    def min(self):
+    def findData(self):
         if self.head == None:
             return None
         res = self.head
         cur = self.head
         while cur != None:
-            if cur.data < res.data:
+            if cur.data == res.data:
                 res = cur
             cur = cur.next
         return res.data
@@ -30,10 +31,8 @@ class LinkedList:
 a = list(map(int, input().split()))
 l = LinkedList()
 
-for x in a:
-    if x == 0:
-        break
-    l.insertTail(x)
-    
-print(l.min())
+for i in range(len(a)):
+    if a[i] == a[index - 1]:
+        l.insertTail(a[i])
 
+print(l.findData())
