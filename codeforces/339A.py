@@ -1,10 +1,7 @@
-s = list(input())
+seq = input().split("+")
+seq.sort()
+res = seq[0]
 
-min_x = '99'
-res = ""
-for i in range(len(s)):
-    if ord(s[i]) < ord(min_x):
-        min_x = s[i]
-    res = res + s[i]
-
+for i in range(len(seq)-1):
+    res = res + "+" + seq[i+1]
 print(res)

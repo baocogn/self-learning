@@ -22,6 +22,5 @@ res = []
 for i in range(len(a)):
     if i < 2:
         res.append(-1)
-    else:
-        if a
+
 

@@ -1,0 +1,2 @@
+Dijkstra: use for positive graph only
+Bellman Ford: use for both negative and positive graph

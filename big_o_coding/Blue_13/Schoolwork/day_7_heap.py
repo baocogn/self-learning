@@ -18,5 +18,3 @@ if __name__ == "__main__":
     a = list(map(int, input().split()))
     BuildHeap(len(a))
     print(a)
-
-
